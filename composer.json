@@ -1,0 +1,31 @@
+{
+    "name": "social-foundation/helpers",
+    "description": "Used during acceptance testing. Activates and deactivates Social Foundation modules",
+    "type": "wordpress-muplugin",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Andreas Nurbo",
+            "email": "andreas@goose.studio"
+        }
+    ],
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/artofwp/cloudless"
+        },
+        {
+          "type": "git",
+          "url": "git@bitbucket.org:socialfoundation/social-foundation.git"
+        }
+    ],
+  "require-dev": {
+    "artofwp/cloudless": "dev-master",
+    "social-foundation/social-foundation": "dev-master"
+  },
+  "scripts": {
+    "post-install-cmd": "php scripts/after-composer.php",
+    "post-update-cmd": "php scripts/after-composer.php"
+  }
+}

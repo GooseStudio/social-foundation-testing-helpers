@@ -1,0 +1,91 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "7341b3256fe572e0462d95869a3825f5",
+    "content-hash": "3ce1976ebeebd1ffb1ff2eacedd37196",
+    "packages": [],
+    "packages-dev": [
+        {
+            "name": "artofwp/cloudless",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/artofwp/cloudless",
+                "reference": "d74843223e90637025d6a03bf3d319259a051d97"
+            },
+            "require-dev": {
+                "artofwp/wp-testing": "dev-master",
+                "mikey179/vfsstream": "^1.6",
+                "mockery/mockery": "0.9.4",
+                "php-mock/php-mock-mockery": "dev-master",
+                "phpunit/phpunit": "5.3.2"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "CLMVC\\": "lib/",
+                    "tests\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Nurbo",
+                    "email": "andreas@artofwp.com"
+                }
+            ],
+            "description": "Framework for developing MVC based WordPress plugins or standalone sites",
+            "time": "2016-08-20 14:23:46"
+        },
+        {
+            "name": "social-foundation/social-foundation",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:socialfoundation/social-foundation.git",
+                "reference": "17f829a8655ba023b9d2e87b15335d4d607feb4a"
+            },
+            "require-dev": {
+                "artofwp/cloudless": "dev-master",
+                "artofwp/wp-testing": "dev-master",
+                "mikey179/vfsstream": "^1.6",
+                "mockery/mockery": "0.9.4",
+                "php-mock/php-mock-mockery": "dev-master",
+                "phpunit/phpunit": "5.3.2"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "SocialFoundation\\": "src/",
+                    "SocialFoundation\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Nurbo",
+                    "email": "andreas@artofwp.com"
+                }
+            ],
+            "description": "Framework for making membership sites.",
+            "time": "2016-09-01 11:10:19"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "artofwp/cloudless": 20,
+        "social-foundation/social-foundation": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
